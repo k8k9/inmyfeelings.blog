@@ -5,3 +5,46 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  position:fixed;
+  top:0px;
+  bottom:0px;
+  left:0px;
+  right:0px;
+  font-family: sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh);
+}
+
+.coming-soon {
+  position: relative;
+  /* height: 100%; */
+  min-height: 350px;
+  min-width: 300px;
+  margin: 20px;
+  color: #E2E2E2;
+  background-color: rgba(255, 188, 254, 0.54);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 147, 253, 0.4);
+  /* display: flex; */
+}
+
+.coming-soon h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.coming-soon p {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  font-size: 20px;
+}
