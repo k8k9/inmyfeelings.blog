@@ -1,7 +1,7 @@
 # install:
 # - yarn install --production=false
-# script:
-# - yarn build
+script:
+- echo success
 deploy:
   provider: s3
   access_key_id: AKIAITYS7RNRUIWSOLHQ
