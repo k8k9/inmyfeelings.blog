@@ -1,14 +1,14 @@
-# install:
-# - yarn install --production=false
+install:
+- yarn install --production=false
 script:
-- echo success
+- yarn run hexo generate
 deploy:
   provider: s3
   access_key_id: AKIAITYS7RNRUIWSOLHQ
   secret_access_key:
     secure: M95hWVnYsU+ujDIGGb7mJpjfUZEoVPSZC6oYf1lHdUCnhNrMifShPBCffj/9TxefuZDqiWhPvcDnZoz0LS0dh9T6QrU5ZVIQwaqlpd0SEuDuF9/Em1ML7uHEpkMrQapObjehgbFx0UyL8ZaWVUprVNu/MJtdQlVWrIvW/npFhWMewVi2MVJF0G8nrN33QSkFUsF9t2klBUpEgfJq8EvIA9wpZRZrwYKVRs5MsnidBa3vocfmIHvu1X6z0f5RnzYGIyqRUMZpGO9hQph9MCBL6FYMNE63Cpx909fg3XnW96dSWjRpRKyhJgJvAkKkkJWojR9juxD089/u+xIyLdj69OmJuymdECPHFrYiMbvBsS8JrWK8tA5e6sTEjg9+3TyCamwnGgxi/bWWvtVJZaxXHRS4rubNVmR/tRfInkJFdEjBSzVk/9wWDCjoFOo5tHv+AkufinQzIku+0ZG9SO0mMfoNFhm+VVjV3yF07JaE+H9DcHyZE+aCLWT4j1xlPmd4hjir+AAbP+1dRVIAlMxubJ0StOljRFx7ZE2YJdaJiHxl0HkS75aZdiPHAqbgSqYnODtBhq87Uy3XX8+7IJ+HE1xU1m3fXSU6+H83u5ci6I82RKg9tI/UvH5CfG5FYtVvSC4F3m4BCcvIZityC3vwlLC+1fn/rKkjaKnnMzuJpa4=
   bucket: inmyfeelings.blog
-  local-dir: build
+  local-dir: public
   acl: public_read
   on:
     repo: k8k9/inmyfeelings.blog
