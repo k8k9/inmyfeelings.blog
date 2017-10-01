@@ -59,3 +59,9 @@ typings/
 
 # MacOS
 .DS_Store
+
+# Hexo - I think we don't need this tracked
+db.json
+
+# Hexo Build Artifact
+public/
