@@ -1,7 +1,7 @@
-# install:
-# - yarn install --production=false
+install:
+- yarn install --production=false
 script:
-- echo success
+- yarn run hexo generate
 deploy:
   provider: s3
   access_key_id: AKIAITYS7RNRUIWSOLHQ
